@@ -6,8 +6,9 @@
     justify-content: right;
 }
 
-.salir {
+.salir button {
     align-content: end;
+
 }
 button {
 height: 50px;
@@ -18,4 +19,5 @@ background-color: rgb(2, 134, 134);
 font-size: 18px;
 padding: 0 25px;
 cursor: pointer;
+
 }
