@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(#040FF6, #299DED, #B3F8EC, #8AF9B6 );
+}
+
+.grid.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 80px 200px;
+    grid-template-areas: 
+    "navbar-header navbar-header"
+    "main-panel main-panel"
+    "footer footer";
+    justify-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.navbar-header {
+    display: inline;
+    justify-items: initial;
+    text-decoration: none;
+}
+
+.navbar-header
+
+.navbar-header a {
+    text-decoration: none;
+}
+
+.main-panel {
+    padding: 20px;
+    margin: 50vh;
+}
+
+.main-panel button {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10%;
+    padding: 200px;
+    margin: 10px;
+    
+}
