@@ -10,10 +10,11 @@ import { ComponentesModule } from '../componentes/componentes.module';
 import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 import { DetalleTransferenciaComponent } from './detalle-transferencia/detalle-transferencia.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { TransferenciaComponent } from './transferencia/transferencia.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, TransferenciasRecibidasComponent, TransferenciasEnviadasComponent, NuevaTransferenciaComponent, DetalleTransferenciaComponent, MiCuentaComponent],
+  declarations: [DashboardComponent, TransferenciasRecibidasComponent, TransferenciasEnviadasComponent, NuevaTransferenciaComponent, DetalleTransferenciaComponent, MiCuentaComponent, TransferenciaComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

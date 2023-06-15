@@ -1,0 +1,49 @@
+.main-form {
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid blue;
+    margin: 100px;
+    background: #B3F8EC;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.main-form label {
+    display: inline-block;
+    color: black;
+}
+
+.main-form input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.main-form div {
+    margin: 20px 0;
+}
+.main-form button {
+    height: 50px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(2, 134, 134);
+    color: white;
+    font-size: 18px;
+    padding: 0 25px;
+}
+
+.main-form button:hover {
+    opacity: 0.9;
+    color: black;
+}

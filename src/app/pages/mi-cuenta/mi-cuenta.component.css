@@ -1,0 +1,21 @@
+.saldo {
+    justify-content: left;
+}
+
+.contraseña {
+    justify-content: right;
+}
+
+.salir {
+    align-content: end;
+}
+button {
+height: 50px;
+width: 100%;
+border-radius: 5px;
+border: 1px solid blue;
+background-color: rgb(2, 134, 134);
+font-size: 18px;
+padding: 0 25px;
+cursor: pointer;
+}

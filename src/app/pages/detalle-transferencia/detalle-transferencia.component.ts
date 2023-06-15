@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TransferenciasEnviadas } from 'src/app/datos/transferencias.enviadas.ejemplo';
+
 
 @Component({
   selector: 'app-detalle-transferencia',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./detalle-transferencia.component.css']
 })
 export class DetalleTransferenciaComponent {
+  
+  transferencias: any[]= TransferenciasEnviadas
+
 
 }

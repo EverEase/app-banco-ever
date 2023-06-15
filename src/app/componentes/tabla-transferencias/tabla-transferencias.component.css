@@ -1,6 +1,10 @@
 .fila-tabla {
     display: flex;
     gap: 10px;
+    opacity: 1;
+    text-align: center;
+    background: rgb(65, 203, 203);
+    border: 1px solid rgb(86, 86, 241);
 }
 
 .fila-tabla div {

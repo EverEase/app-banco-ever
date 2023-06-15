@@ -1,37 +1,17 @@
-body {
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(#040FF6, #299DED, #B3F8EC, #8AF9B6 );
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "login-area", "footer";
-    text-align: center; 
-}
 
-
-.header {
-    margin: 10px;
-    padding: 20px;
-
-}
-
-.header logo {
-    margin: 0;
-    justify-items: center;
-}
-
-.header img {
-    margin: 0;
-    padding: 0;
-}
 
 .login-form {
+    
     justify-content: center;
     background: #B3F8EC;
     border-radius: 10px;
-    padding: 200px;
-    margin: 200px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 100px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .login-form h2 {
@@ -128,14 +108,19 @@ body {
     border-radius: 5px;
     border: 1px solid blue;
     background-color: rgb(2, 134, 134);
-    color: white;
     font-size: 18px;
     padding: 0 25px;
+    cursor: pointer;
 }
 
 .login-form button:hover {
     opacity: 0.9;
     color: black;
+}
+
+.login-form button a {
+    text-decoration: none;
+    color: snow;
 }
 
 .footer {

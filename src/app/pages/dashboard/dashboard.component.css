@@ -1,37 +1,11 @@
-body {
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(#040FF6, #299DED, #B3F8EC, #8AF9B6 );
-}
-
-.grid.container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 80px 200px;
-    grid-template-areas: 
-    "navbar-header navbar-header"
-    "main-panel main-panel"
-    "footer footer";
-    justify-items: center;
-    justify-content: space-between;
-    align-content: space-around;
-}
-
-.navbar-header {
-    display: inline;
-    justify-items: initial;
-    text-decoration: none;
-}
-
-.navbar-header
-
-.navbar-header a {
-    text-decoration: none;
-}
-
 .main-panel {
+    display: flex;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 400px;
     padding: 20px;
-    margin: 50vh;
+    margin: auto;
+    
 }
 
 .main-panel button {
@@ -40,6 +14,18 @@ body {
     font-size: 20px;
     border-radius: 10%;
     padding: 200px;
-    margin: 10px;
+    margin: auto;
     
+}
+
+.main-panel button a {
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .author {
+    font-size: 12px;
 }
