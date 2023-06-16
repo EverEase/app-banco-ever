@@ -1,3 +1,9 @@
+.header-logo  {
+    justify-items: center;
+
+
+}
+
 .main-menu {
     display: flex;
     gap: 10px;
