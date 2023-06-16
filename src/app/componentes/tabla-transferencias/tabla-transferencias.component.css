@@ -5,6 +5,8 @@
     text-align: center;
     background: rgb(65, 203, 203);
     border: 1px solid rgb(86, 86, 241);
+    width: 40%;
+    cursor: pointer;
 }
 
 .fila-tabla div {
@@ -15,4 +17,9 @@
 .cabecera-tabla {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.fila-tabla, .cabecera-tabla {
+    margin: auto;
+    padding: 20px;
 }

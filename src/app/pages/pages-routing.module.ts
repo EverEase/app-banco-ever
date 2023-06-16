@@ -17,7 +17,7 @@ component: DashboardComponent},{
   path: 'transferencias-enviadas',
   component: TransferenciasEnviadasComponent
 }, {
-  path: 'detalle-transferencia',
+  path: 'transferencias/:id',
   component: DetalleTransferenciaComponent
 }, {
   path: 'mi-cuenta',

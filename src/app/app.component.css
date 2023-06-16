@@ -1,9 +1,28 @@
-.header-logo  {
-    justify-items: center;
-
-
+.header-logo {
+    margin: auto;
+    text-align: center;
+    display: block;
 }
 
+.header-logo img {
+    width: 120px;
+}
+.active-menu {
+    background-color: aquamarine
+}
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu:hover .submenu {
+    display: block;
+
+}
 .main-menu {
     display: flex;
     gap: 10px;
@@ -11,8 +30,9 @@
     background-color: transparent;
     justify-content: flex-start;
     border: 2px solid mediumblue;
-    border-width: 3px;
+    border-width: 1px;
     border-style: double;
+    height: 50px;
     
 }
 
@@ -29,13 +49,13 @@ h1 {
     color: aliceblue;
 }
 .main-menu li {
+    float: none;
     display: inline-block;
-    margin: 25px 0 0;
     padding: 10px;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main-menu li:hover {
-    background-color: blue;
+    background-color: aquamarine;
 }

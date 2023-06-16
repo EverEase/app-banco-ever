@@ -2,22 +2,54 @@
     justify-content: left;
 }
 
+h2 {
+    text-align: center;
+}
+.saldo {
+    text-align: left;
+}
+
+.saldo h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+input {
+ height: 40px;
+ width: 30%;
+}
+
+
 .contraseña {
-    justify-content: right;
+    text-align: right;
 }
 
 .salir button {
     align-content: end;
 
 }
-button {
-height: 50px;
-width: 100%;
-border-radius: 5px;
-border: 1px solid blue;
-background-color: rgb(2, 134, 134);
-font-size: 18px;
-padding: 0 25px;
-cursor: pointer;
 
+div {
+    margin: 20px 0;
+}
+
+ button {
+    height: 40px;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(29, 212, 212);
+    color: snow;
+    font-size: 18px;
+    padding: 0 25px;
+    cursor: pointer;    
+    
+}
+    
+button a {
+    text-decoration: none;
+    text-align: center;      
+}
+    
+button:hover {
+    color: black;
 }

@@ -1,14 +1,32 @@
-<img class="header-logo" src="ever_banco-removebg-preview.png" alt="Logo Ever Banco">
+<div class="header-logo">
+<img src="assets/ever_banco-removebg-preview.png" alt="Logo Ever Banco">
+</div>
 <nav class="main-menu">
   <ul>
-    <li><a routerLink="/auth/login">Inicio/Login</a></li>
-    <li><a routerLink="/pages/dashboard">Panel</a></li>
-    <li><a routerLink="/pages/transferencias-recibidas">Transferencias Recibidas</a></li>
-    <li><a routerLink="/pages/transferencias-enviadas">Transferencias Enviadas</a></li>
-    <li><a routerLink="/pages/detalle-transferencia">Detalle Transferencia</a></li>
-    <li><a routerLink="/pages/mi-cuenta">Mi Cuenta</a></li>
-    <li><a routerLink="/pages/nueva-transferencia">Nueva Transferencia</a></li>
-    <li><a routerLink="/pages/transferencia">Transferencia</a></li>
+    <li><a routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:true}" routerLink="/auth/login">Inicio/Login</a></li>
+    <li><a routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:true}" routerLink="/pages/dashboard">Panel</a></li>
+    <li><a routerLinkActive="active-menu"[routerLinkActiveOptions]="{exact:true}" routerLink="/pages/mi-cuenta">Mi Cuenta</a></li>
+    <li class="dropdown-menu">
+      <a routerLinkActive="active-menu"[routerLinkActiveOptions]="{exact:true}" routerLink="/pages/transferencia">Transferencias</a>
+    <ul class="submenu">
+      <li>
+        <a routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:true}"routerLink="/pages/transferencias-recibidas">Transferencias Recibidas
+
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive="active-menu"[routerLinkActiveOptions]="{exact:true}" routerLink="/pages/transferencias-enviadas">Transferencias Enviadas
+
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive="active-menu" routerLink="/pages/nueva-transferencia">Nueva Transferencia
+
+        </a>
+      </li>
+    </ul>
+    </li>
+  
   </ul>
 </nav>
 <!-- aqui se recarga el componente al recargar la pagina-->

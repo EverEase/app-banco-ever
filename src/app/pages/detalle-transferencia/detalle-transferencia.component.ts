@@ -9,7 +9,7 @@ import { TransferenciasEnviadas } from 'src/app/datos/transferencias.enviadas.ej
 })
 export class DetalleTransferenciaComponent {
   
-  transferencias: any[]= TransferenciasEnviadas
+  transferencia: any = TransferenciasEnviadas [1]
 
 
 }
