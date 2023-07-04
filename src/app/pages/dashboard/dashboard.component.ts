@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { clientes } from 'src/app/datos/usuarios.ejemplo';
+import { ClienteService } from 'src/app/services/cliente/cliente.service';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
 
+  constructor(private clienteService: ClienteService){}
+
+  ngOnInit(): void {
+    this.clienteService.obtenerClientes().subscribe(clientes => {
+      console.log({ clientes });
+    
+  });
+
+}
 }

@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { clientes } from 'src/app/datos/usuarios.ejemplo'; 
 
@@ -6,7 +7,9 @@ import { clientes } from 'src/app/datos/usuarios.ejemplo';
 })
 export class ClienteService {
 
-  constructor() { }
+  urlApi: string = "http://localhost:8081/cliente"
+
+  constructor(private http: HttpClient) { }
 
   hacerLogin(email: string, password: string){
     for(let cliente of clientes){
@@ -16,5 +19,9 @@ export class ClienteService {
   }
   return null;
 
+  }
+
+  obtenerClientes(){
+    return this.http.get(this.urlApi);
   }
 }

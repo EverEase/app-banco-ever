@@ -8,7 +8,7 @@
     width: 120px;
 }
 .active-menu {
-    background-color: aquamarine
+    background-color: none;
 }
 .dropdown-menu {
     position: relative;
@@ -25,13 +25,10 @@
 }
 .main-menu {
     display: flex;
-    gap: 10px;
+    gap: 9px;
     list-style: none;
     background-color: transparent;
     justify-content: flex-start;
-    border: 2px solid mediumblue;
-    border-width: 1px;
-    border-style: double;
     height: 50px;
     
 }
@@ -41,12 +38,12 @@ h1 {
 }
 
 .main-menu a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .main-menu a:hover {
-    color: aliceblue;
+    color: black;
 }
 .main-menu li {
     float: none;
@@ -57,5 +54,13 @@ h1 {
 }
 
 .main-menu li:hover {
-    background-color: aquamarine;
+    background-color:rgba(0, 128, 128, 0.5);
+}
+
+.linea {
+    border-top: 3px solid black;
+    height: 2px;
+    max-width: 200px;
+    padding: 2px;
+    margin: 20px auto 0 auto;
 }

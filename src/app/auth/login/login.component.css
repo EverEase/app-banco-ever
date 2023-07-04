@@ -3,7 +3,7 @@
 .login-form {
     
     justify-content: center;
-    background: #B3F8EC;
+    background: whitesmoke;
     border-radius: 10px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -95,7 +95,7 @@
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid black;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -107,7 +107,7 @@
     width: 100%;
     border-radius: 5px;
     border: 1px solid blue;
-    background-color: rgb(2, 134, 134);
+    background-color: teal;
     font-size: 18px;
     padding: 0 25px;
     cursor: pointer;
@@ -115,12 +115,12 @@
 
 .login-form button:hover {
     opacity: 0.9;
-    color: black;
+    color: blue;
 }
 
 .login-form button a {
     text-decoration: none;
-    color: snow;
+    color: white;
 }
 
 .footer {
