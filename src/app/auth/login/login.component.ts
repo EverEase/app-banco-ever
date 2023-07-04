@@ -25,5 +25,23 @@ validarLogin(){
     console.error('Credenciales incorrectas')
   }
   }
+
+  enviarLogin(){
+    this.clienteService.login(this.email,this.pasword).subscribe(
+      // cuando la respuesta es correcta
+      (cliente) => {
+        console.log({ cliente });
+        if(cliente){
+        this.router.navigateByUrl("/pages/dashboard");
+        } else {
+          console.error("Login incorrecto");
+        } 
+      },
+      //cuando hay errores en la respuesta
+      (error) => {
+        console.log({ error });
+      }
+    )
+  }
 }
 

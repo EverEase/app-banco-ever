@@ -23,6 +23,7 @@
     display: block;
 
 }
+
 .main-menu {
     display: flex;
     gap: 9px;
@@ -57,10 +58,16 @@ h1 {
     background-color:rgba(0, 128, 128, 0.5);
 }
 
-.linea {
+.main-menu .linea {
     border-top: 3px solid black;
     height: 2px;
-    max-width: 200px;
-    padding: 2px;
+    max-width: 100px;
+    padding: 200px;
     margin: 20px auto 0 auto;
+    justify-content: first baseline;
+}
+
+.linea {
+    
+    gap: 10px;
 }

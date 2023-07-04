@@ -7,7 +7,7 @@ import { clientes } from 'src/app/datos/usuarios.ejemplo';
 })
 export class ClienteService {
 
-  urlApi: string = "http://localhost:8081/cliente"
+  urlApi: string = "http://localhost:8080/cliente"
 
   constructor(private http: HttpClient) { }
 
@@ -23,5 +23,26 @@ export class ClienteService {
 
   obtenerClientes(){
     return this.http.get(this.urlApi);
+  }
+
+  login(correo: string, pass: string){
+    const url = `${this.urlApi}/login?correo=${correo}&pass=${pass}`;
+    return this.http.get(url);
+
+  }
+
+  crearSesion(clienteLogueado: any){
+    const clienteJSON = JSON.stringify(clienteLogueado)
+    sessionStorage.setItem("sesion", clienteJSON);
+  }
+
+  leerSesion(){
+    const clienteJSON = sessionStorage.getItem("sesion");
+    if(clienteJSON) {
+    const clienteLogueado = JSON.parse(clienteJSON);
+    return clienteLogueado;
+    }
+    return null;
+  
   }
 }
