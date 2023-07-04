@@ -45,4 +45,8 @@ export class ClienteService {
     return null;
   
   }
+
+  cerrarSesion(){
+    sessionStorage.removeItem("sesion");
+  }
 }

@@ -9,13 +9,12 @@ import { ClienteService } from 'src/app/services/cliente/cliente.service';
 })
 export class DashboardComponent implements OnInit {
 
+  cliente: any =null;
   constructor(private clienteService: ClienteService){}
 
   ngOnInit(): void {
-    this.clienteService.obtenerClientes().subscribe(clientes => {
-      console.log({ clientes });
-    
-  });
+  this.cliente = this.clienteService.leerSesion();
+  console.log('Logueado: ', this.cliente);
 
 }
 }

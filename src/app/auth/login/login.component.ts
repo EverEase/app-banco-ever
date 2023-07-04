@@ -32,6 +32,7 @@ validarLogin(){
       (cliente) => {
         console.log({ cliente });
         if(cliente){
+          this.clienteService.crearSesion(cliente);
         this.router.navigateByUrl("/pages/dashboard");
         } else {
           console.error("Login incorrecto");
