@@ -3,7 +3,7 @@
 </div>
 <nav class="main-menu">
   <ul>
-    <li><a routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:true}" routerLink="/auth/login">Inicio/Login</a></li>
+    <li><a routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:true}" routerLink="/auth/login">Login</a></li>
     <li><a routerLinkActive="active-menu" [routerLinkActiveOptions]="{exact:true}" routerLink="/pages/dashboard">Panel</a></li>
     <li><a routerLinkActive="active-menu"[routerLinkActiveOptions]="{exact:true}" routerLink="/pages/mi-cuenta">Mi Cuenta</a></li>
     <li class="dropdown-menu">
@@ -26,7 +26,8 @@
       </li>
     </ul>
     </li>
-    <button (click)="cerrarSesion()" class="btn btn-primary"><a routerLink="/pages/login">cerrarSesion</a></button>
+    <button><a routerLinkActive="active-menu" routerLink="/auth/login">Cerrar Sesión</a></button>
+    
   
   </ul>
   <div class="linea"></div>

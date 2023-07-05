@@ -1,3 +1,5 @@
 <h3>Transferencias Enviadas</h3>
-<app-tabla-transferencias [transferencias]="transferencias"></app-tabla-transferencias>
+<button (click)="cargarTransferencias()"><a routerLink="/pages/transferencias-enviadas"></a>Refrescar</button>
+
+<app-tabla-transferencias [transferencias]="transferencias"></app-tabla-transferencias> 
 
