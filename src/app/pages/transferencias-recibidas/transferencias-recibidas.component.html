@@ -9,4 +9,5 @@
     <div>{{ transferencia.fecha | date: 'short' }}</div>
 </article> -->
 <h3>Transfereas Recibidas</h3>
+<button (click)="cargarTransferencias()"><a routerLink="/pages/transferencias-enviadas"></a>Refrescar</button>
 <app-tabla-transferencias [transferencias]="transferencias"></app-tabla-transferencias>

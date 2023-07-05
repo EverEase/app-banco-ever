@@ -15,6 +15,14 @@ export class TransferenciaService {
     return this.http.get(this.urlApi);
   }
 
+  obtenerTransferenciasPorOrdenanteId(id: number) {
+    return this.http.get(`${this.urlApi}/cliente/${id}`)
+  }
+
+  obtenerTransferenciasPorBeneficiarioId(id: number) {
+    return this.http.get(`${this.urlApi}/beneficiario/${id}`)
+  }
+
   //guardar transferencia
 
   //buscar transferencia por correo y password

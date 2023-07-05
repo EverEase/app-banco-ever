@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TransferenciasEnviadas } from 'src/app/datos/transferencias.enviadas.ejemplo';
+import { ClienteService } from 'src/app/services/cliente/cliente.service';
 import { TransferenciaService } from 'src/app/services/transferencia/transferencia.service';
 
 @Component({
@@ -11,16 +12,19 @@ export class TransferenciasEnviadasComponent implements OnInit{
 
   transferencias: any[] = [];
 
-  constructor(private transferenciaService: TransferenciaService) {}
+  cliente: any= null
+
+  constructor(private transferenciaService: TransferenciaService, private clienteService: ClienteService) {}
 
   ngOnInit() {
+    this.cliente= this.clienteService.leerSesion();
     this.cargarTransferencias();
   }
 
   cargarTransferencias(){
     this.transferenciaService
-    .obtenerTransferencias()
-    .subscribe((transferenciasCargadas: any) => {
+    .obtenerTransferenciasPorOrdenanteId(this.cliente.id)
+      .subscribe((transferenciasCargadas: any) => {
       console.log ( transferenciasCargadas );
       this.transferencias = transferenciasCargadas;
     });
