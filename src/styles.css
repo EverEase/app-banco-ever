@@ -1,5 +1,9 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+
 html {
     background: rgb(59, 226, 238);
     background-repeat: no-repeat;
     min-height: 100vh;
+    font-family: "Rajdhani";
 }
