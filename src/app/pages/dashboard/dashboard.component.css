@@ -1,27 +1,38 @@
 .main-panel {
-    display: flex;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 400px;
     padding: 20px;
-    margin: 40px;
-    margin-bottom: 20px;
+    margin: auto;
+    justify-content: center;
+    
     
 }
 
+div {
+    margin: 20px;
+}
+
 .main-panel button {
-    text-align: center;
-    font-size: 20px;
-    border-radius: 10%;
-    padding: 60px;
-    padding-top: 50px;
-    margin: 100px;
-    cursor: pointer;
+    height: 50px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(37, 228, 228);
+    font-size: 18px;
+    padding: 0 25px;
+    cursor: pointer; 
     
 }
 
 .main-panel button a {
     text-decoration: none;
+    color: white;
+}
+
+.main-panel button a:hover {
+    color: black;
 }
 
 .footer {

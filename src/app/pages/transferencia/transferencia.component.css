@@ -3,7 +3,7 @@ button {
     width: 50%;
     border-radius: 5px;
     border: 1px solid blue;
-    background-color: rgb(29, 212, 212);
+    background-color: rgb(37, 228, 228);
     color: white;
     font-size: 18px;
     padding: 0 25px;
@@ -15,12 +15,12 @@ button {
 button a {
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: snow;
     
 }
 
 button a:hover {
-    color: snow;
+    color: black;
 
 }
 div {

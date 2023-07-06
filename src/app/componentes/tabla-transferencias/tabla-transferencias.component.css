@@ -3,8 +3,8 @@
     gap: 10px;
     opacity: 1;
     text-align: center;
-    background: rgb(65, 203, 203);
-    border: 1px solid rgb(86, 86, 241);
+    background: rgba(114, 239, 239, 0.5);
+    border: 1px solid rgb(2, 2, 145);
     width: 40%;
     cursor: pointer;
 }

@@ -1,13 +1,6 @@
-<!--<div class="fila-tabla cabecer-tabla">
-    <div>Concepto</div>
-    <div>Import</div>
-    <div>Fecha</div>
-</div>
-<article class="fila-tabla" *ngFor="let transferencia of transferencias">
-    <div>{{ transferencia.concepto }}</div>
-    <div>{{ transferencia.importe | currency:'EUR'}}</div>
-    <div>{{ transferencia.fecha | date: 'short' }}</div>
-</article> -->
 <h3>Transfereas Recibidas</h3>
-<button (click)="cargarTransferencias()"><a routerLink="/pages/transferencias-enviadas"></a>Refrescar</button>
+
+<div>
+    <button><a routerLink="/pages/transferencia">Volver</a></button>
+</div>
 <app-tabla-transferencias [transferencias]="transferencias"></app-tabla-transferencias>

@@ -1,17 +1,15 @@
 <div class="main-form">
     <h2>Nueva Transferencia</h2>
     <div>
-    <input type="id" placeholder="ID Beneficiario" />
-    <label for="id"></label>
+    <input [(ngModel)]="nuevaTransferencia.beneficiario.id" type="id" placeholder="ID Beneficiario" />
     </div>
     <div>
-    <input type="number"  placeholder="Importe"  />
-    <label for="number" ></label>
+    <input [(ngModel)]="nuevaTransferencia.importe" step="0.01" type="number"   />
     </div>
     <div>
-    <input type="text" placeholder="Concepto" />
-    <label for="text"></label>
+    <input [(ngModel)]="nuevaTransferencia.concepto" type="text" placeholder="Concepto" />
     </div>
     <br>
-    <button>Confirmar</button>
+    <button (click)="enviarTransferencia()">Confirmar</button>
+    <p>{{ feedback }}</p>
 </div>

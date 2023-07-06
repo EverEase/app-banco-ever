@@ -1,8 +1,10 @@
 <h2>Detalle transferencia</h2>
 
-    <div><h4>Ordenante</h4> {{transferencia.idOrdenante}}</div>
-    <div><h4>Beneficiario </h4>{{transferencia.idBeneficiario}}</div>
-    <div><h4>Concepto</h4>{{ transferencia.concepto }}</div>
-    <div><h4>Importe</h4>{{ transferencia.importe | currency:'EUR'}}</div>
-    <div><h4>Fecha</h4>{{ transferencia.fecha | date: 'short' }}</div>
+    <div><h4>Ordenante  {{transferencia.ordenante.usuario}}</h4></div>
+    <div><h4>Beneficiario  {{transferencia.beneficiario.usuario}}</h4></div>
+    <div><h4>Concepto  {{ transferencia.concepto }}</h4></div>
+    <div><h4>Importe  {{ transferencia.importe | currency:'EUR'}}</h4></div>
+    <div><h4>Fecha  {{ transferencia.fecha | date: 'short' }}</h4></div>
+    <div><button><a routerLink="/pages/transferencia">Volver</a></button></div>
+     
 

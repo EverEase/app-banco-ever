@@ -1,0 +1,29 @@
+h2 {
+    text-align: center;
+}
+
+button {
+    height: 40px;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(136, 237, 237);
+    font-size: 18px;
+    padding: 0 25px;
+    cursor: pointer;    
+    
+}
+    
+button a {
+    text-decoration: none;
+    text-align: center;  
+    color: black;    
+}
+
+button a:hover {
+    color: snow;
+}
+    
+button:hover {
+    color: black;
+}

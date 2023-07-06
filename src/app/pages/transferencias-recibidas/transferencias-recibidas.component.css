@@ -1,0 +1,22 @@
+button {
+    height: 40px;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid blue;
+    background-color: rgb(136, 237, 237);
+    font-size: 18px;
+    padding: 0 25px;
+    cursor: pointer;    
+    
+}
+    
+button a {
+    text-decoration: none;
+    text-align: center; 
+    color: snow;     
+}
+
+button a:hover {
+    color: black;
+}
+    

@@ -38,7 +38,6 @@ div {
     border-radius: 5px;
     border: 1px solid blue;
     background-color: rgb(29, 212, 212);
-    color: snow;
     font-size: 18px;
     padding: 0 25px;
     cursor: pointer;    
@@ -47,7 +46,8 @@ div {
     
 button a {
     text-decoration: none;
-    text-align: center;      
+    text-align: center; 
+    color: snow;     
 }
     
 button:hover {

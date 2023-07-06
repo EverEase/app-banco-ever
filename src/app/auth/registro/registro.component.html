@@ -1,0 +1,17 @@
+<div class="main-form">
+    <h2>Registro</h2>
+    <div>
+    <input [(ngModel)]="nuevoRegistro.usuario" type="string" placeholder="Usuario" />
+    </div>
+    <div>
+    <input [(ngModel)]="nuevoRegistro.correo" type="string" placeholder="Email"  />
+    </div>
+    <div>
+    <input [(ngModel)]="nuevoRegistro.password" type="password" placeholder="Contraseña" />
+    </div>
+    <br>
+    <button (click)="Registro()">Confirmar</button>
+    <p>{{ feedback }}</p>
+    
+</div>
+
