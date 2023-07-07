@@ -14,16 +14,16 @@ export class TransferenciasRecibidasComponent implements OnInit {
 
   cliente: any = null
 
-  constructor(private transferenciasService: TransferenciaService,private clienteService: ClienteService) {}
+  constructor(private transferenciaService: TransferenciaService,private clienteService: ClienteService) {}
 
 
 ngOnInit() {
   this.cliente= this.clienteService.leerSesion();
-  this.cargarTransferencias();
+  this.cargarTransferenciasRecibidas();
 }
 
-cargarTransferencias(){
-  this.transferenciasService
+cargarTransferenciasRecibidas(){
+  this.transferenciaService
   .obtenerTransferenciasPorBeneficiarioId(this.cliente.id)
     .subscribe((transferenciasCargadas: any) => {
     console.log ( transferenciasCargadas );

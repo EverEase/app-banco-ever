@@ -18,10 +18,10 @@ export class TransferenciasEnviadasComponent implements OnInit{
 
   ngOnInit() {
     this.cliente= this.clienteService.leerSesion();
-    this.cargarTransferencias();
+    this.cargarTransferenciasEnviadas();
   }
 
-  cargarTransferencias(){
+  cargarTransferenciasEnviadas(){
     this.transferenciaService
     .obtenerTransferenciasPorOrdenanteId(this.cliente.id)
       .subscribe((transferenciasCargadas: any) => {

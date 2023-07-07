@@ -1,3 +1,7 @@
+h2 {
+    text-align: center;
+}
+
 button {
     height: 60px;
     width: 50%;
@@ -8,6 +12,7 @@ button {
     font-size: 18px;
     padding: 0 25px;
     cursor: pointer;
+    justify-content: center;
     
 
 }
