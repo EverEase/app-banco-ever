@@ -11,9 +11,9 @@ export class RegistroComponent {
     usuario: "",
     correo: "",
     password: "",
-    saldo: null,
+    saldo: 0,
     gestor: {
-      id: null,
+      id: 6,
     }
   }
   saldo: any = null;
@@ -23,17 +23,18 @@ export class RegistroComponent {
   constructor(private clienteService: ClienteService) {}
 
   Registro(){
-    this.clienteService
-    .guardarCliente(this.nuevoRegistro)
-    .subscribe((registroGuardado) => {
-      //aquí ya tendremos guardad la transferencia
-      console.log({registroGuardado})
+     this.clienteService
+     .guardarCliente(this.nuevoRegistro)
+     .subscribe((registroGuardado) => {
+       //aquí ya tendremos guardad la transferencia
+       console.log({registroGuardado})
       this.feedback = "Registro completado";
     },
-    (error) => {
+     (error) => {
       console.log(error);
-      this.feedback = "Error al registrarse"
+     this.feedback = "Error al registrarse"
     });
+    
   }
 
 }
